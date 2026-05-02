@@ -1,0 +1,1 @@
+[![медведь](https://placebear.com/100/200)](https://stepik.org/edit-lesson/1263069/step/4)
