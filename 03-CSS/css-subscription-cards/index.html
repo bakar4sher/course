@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <title>Подписка на закрытый канал</title>
+
+    <!-- 😉 Помните, что ваше решение такое же хорошее, как и моё, до тех пор, пока оно вам нравится -->
+
+    <!-- Стили для элементов страницы -->
+    <style>
+        body {
+            /* Используется шрифт Montserrat для текста внутри body */
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("Чернильная буря над городом.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .card {
+            /* Цвет фона карточки */
+            background-color: #fff;
+            width: 240px;
+            min-height: 290px;
+            background-color: rgba(20, 16, 14, 0.9);
+            color: #f1e6cf;
+            padding: 25px;
+            border: 2px solid #6f4c35;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+            width: 240px;
+            height: 290px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card h2 {
+            /* Внутренний отступ для заголовка h2 */
+            margin: 5px;
+            text-align: center;
+            color: #f4e8cf;
+
+
+        }
+
+        .dostoevsky {
+            background-image: url("Достоевский.png");
+        }
+
+        .andreev {
+            background-image: url("Андреев.png");
+        }
+
+        .platonov {
+            background-image: url("Платонов.png");
+        }
+
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+
+        .price {
+            /* Размер шрифта цены */
+            font-size: 20px;
+            /* Жирное начертание для цены */
+            font-weight: bold;
+            text-align: center;
+            color: #d8b06a;
+        }
+
+
+        .button {
+            display: block;
+            padding: 10px 18px;
+            background-color: #8f1d1d;
+            color: #fff4dc;
+            text-decoration: none;
+            border-radius: 6px;
+            width: fit-content;
+            margin: 15px auto 0;
+            margin-top: 100px;
+            align-self: center;
+        }
+
+
+        .button:hover {
+            /* Изменение цвета фона кнопки при наведении */
+            background-color: #b52a2a;
+        }
+
+        ul {
+            /* Удаление маркеров списка */
+            list-style: none;
+            text-align: left;
+
+        }
+
+        li {
+            /* Внешний отступ элементов списка */
+            margin: 5px 0;
+        }
+
+        .check {
+            color: #9fbe7a;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                /* Изменение направления отображения элементов при ширине экрана до 768px */
+                flex-direction: column;
+                /* Выравнивание элементов по центру при изменении направления */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card dostoevsky">
+        <h2>Базовая хтонь</h2>
+        <ul>
+            <li class="check">✓ Печаль и тоска</li>
+            <li class="check">✗ Ужас и мрак</li>
+            <li class="check">✗ Тотальный ужас</li>
+        </ul>
+        <div class="price">&#8381; 199/месяц</div>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+    <div class="card andreev">
+        <h2>Продвинутая хтонь</h2>
+        <ul>
+            <li class="check">✓Печаль и тоска</li>
+            <li class="check">✓ Ужас и мрак</li>
+            <li class="check">✗ Тотальный ужас</li>
+        </ul>
+        <div class="price">&#8381; 299/месяц</div>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+    <div class="card platonov">
+        <h2>Вселенскя хтонь</h2>
+        <ul>
+            <li class="check">✓ Печаль и тоска</li>
+            <li class="check">✓ Ужас и мрак</li>
+            <li class="check">✓ Тотальный ужас</li>
+        </ul>
+        <div class="price">&#8381; 599/месяц</div>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+</body>
+
+</html>
