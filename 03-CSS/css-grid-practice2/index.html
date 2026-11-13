@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px repeat(3, 1fr);
+            grid-template-rows: 60px 1fr 40px;
+            height: 100vh;
+            gap: 0px;
+        }
+
+        .header {
+            background-color: lightblue;
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aside {
+            background-color: lightgreen;
+            grid-column: 1 / 2;
+            grid-row: 2/ 4;
+        }
+
+        .main {
+            grid-column: 2 / 5;
+            grid-row: 2 / 3;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 10px;
+        }
+
+        .section {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: lightgray;
+            grid-column: 1 / 5;
+            grid-row: 3/ 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="aside">Side Panel</div>
+        <div class="main">
+            <div class="section">Content Section 1</div>
+            <div class="section">Content Section 2</div>
+            <div class="section">Content Section 3</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>
